@@ -78,7 +78,11 @@ def katerst(x):
 def schwierigkeit(x):
     
     print("Schreibe einen Schwierigkeitsgrad von 1-5 auf:")
-    antwort = int(input())
+    antwort = input()
+    try:
+        int(antwort)
+    except:
+        return False
     if antwort < 1 or antwort > 5:
         print("Error")
     x.append(antwort)

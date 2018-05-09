@@ -11,7 +11,7 @@ from kivy.uix.pagelayout import PageLayout
 class CalcPageLayout(PageLayout):
     
     def calc(self, text):
-        self.display.text += "ergebniss"
+        self.display.text += "ergebnis"
 
 class HelloKivyApp(App):
  

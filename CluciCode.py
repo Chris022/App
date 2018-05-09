@@ -132,9 +132,9 @@ def likes(x):
     
     return(x)
     
-def testForInt(x):
+def testForFloat(x):
     try:
-        int(x)
+        float(x)
         return True
     except:
         return False

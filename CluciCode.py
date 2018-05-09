@@ -135,6 +135,14 @@ def likes(x):
     x.append(antwort)
     
     return(x)
+    
+def testForInt(x):
+    try:
+        int(x)
+        return True
+    except:
+        return False
+    
 
 
 x = []

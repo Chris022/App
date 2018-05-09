@@ -159,7 +159,36 @@ m.setCell(2,nameCol,name,s2)
 
 
 
+#############################################################################
+                        #lösen
+#############################################################################
+def anzahllösung2(z):
+    
+    nz = []
+    for i in range(len(z)-6):
+        c = z.pop()
+    b = z.pop()    
+    
+    
+    for anl in range(b):
+        anl +=1
+        print(anl, "Lösung")
+        lo = int(input())
+        nz.append(lo)
+        print(nz)
+    richtigfalsch(nz,c)    
+    return
 
+def richtigfalsch(nz,c):
+    
+    print(nz)
+    print(c)
+    if c in nz:
+        print("True")
+    else:
+        print("False")
+    
+    
 
 
 

@@ -79,10 +79,6 @@ def schwierigkeit(x):
     
     print("Schreibe einen Schwierigkeitsgrad von 1-5 auf:")
     antwort = input()
-    try:
-        int(antwort)
-    except:
-        return False
     if antwort < 1 or antwort > 5:
         print("Error")
     x.append(antwort)
@@ -154,9 +150,9 @@ print(x)
 
 c = m.getClient()
 
+
 s = m.getSheet("Testing 2018",c,0)
 s2 = m.getSheet("Testing 2018",c,1)
-
 
 name = "Chris"
 nameCol = 3
@@ -200,12 +196,6 @@ def richtigfalsch(nz,c):
     else:
         print("False")
     
-    
-
-
-
-#hallo
-
 
 
 

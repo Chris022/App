@@ -12,6 +12,7 @@ Builder.load_file("hellokivy.kv")
 
 
  
+<<<<<<< HEAD
 class MenuScreen(Screen):
     pass
  
@@ -45,6 +46,16 @@ sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(SettingsScreen(name='settings'))
 sm.add_widget(CreateScreen(name='create'))
 
+=======
+# Inherit Kivy's App class which represents the window
+# for our widgets
+# HelloKivy inherits all the fields and methods
+# from Kivy
+class CalcPageLayout(PageLayout):
+    
+    def calc(self, text):
+        self.display.text += "ergebnis"
+>>>>>>> 382e238f37d0b1fb8337fd1c74d20dd69db60db9
 
 class HelloKivyApp(App):
  
